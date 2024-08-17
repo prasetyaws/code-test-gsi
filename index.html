@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Test Prasetya Ananta</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 50px;
+        }
+        input[type="text"], button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>String Converter</h1>
+    <input type="text" id="inputString" placeholder="Type here...">
+    <button onclick="runConverter()">Convert</button>
+    <div id="error" style="display: none;color: red;">*Input hanya boleh Kalimat abjad (A-Z, a-z, dan spasi)</div>
+    <div id="answear" style="display: none;">
+        <h3>Soal:</h3>
+        <h3>1. Ubahlah daftar kalimat di atas menjadi sebuah bilangan berdasarkan kamus yang 
+            telah diberikan:</h3>
+        <p id="outputNumber"></p>
+        <h3>2. Ubah, jumlah, dan kurangkan secara bergantian dari hasil konversi nomor 1.</h3>
+        <p id="outputSum"></p>
+        <h3>3. Konversikan hasil dari nomor 2 dan dikembalikan ke dalam bentuk abjad (huruf 
+            besar) sesuai kamus yang diberikan.</h3>
+        <p id="outputConvertAlphabet"></p>
+        <h3>4. Konversikan hasil nomor 3 menjadi sample output yang di inginkan.</h3>
+        <p id="outputConvertAlphabet2"></p>
+        <h3>5. Dari hasil nomor 4, silakan lakukan perubahan kembali.</h3>
+        <p id="outputConvertAlphabet3"></p>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>

@@ -104,7 +104,7 @@ function splitLastTwoIndex() {
     input +
     " dikonversi ke bilangan = " +
     numberSequence +
-    "<br> <br>  dari bilangan tersebut, split 2 bilangan terakhir dan + 1 = " +
+    "<br> <br>  dari bilangan tersebut, split 2 index bilangan terakhir dan + 1 = " +
     newNumberSequence +
     "<br><br> dari hasil tersebut konversi kembali ke huruf besar = " +
     result;
@@ -140,11 +140,11 @@ function runConverter(){
     const regex = /^[A-Za-z\s]+$/;
 
     if (regex.test(input)) {
-        document.getElementById("answear").style.display = "block";
+        document.getElementById("answer").style.display = "block";
         document.getElementById("error").style.display = "none";
         addPlusOneOnEven();
     } else {
-        document.getElementById("answear").style.display = "none";
+        document.getElementById("answer").style.display = "none";
         document.getElementById("error").style.display = "block";
     }
 
